@@ -26,8 +26,7 @@ var pem = @"-----BEGIN PUBLIC KEY-----
 			0QIDAQAB
 			-----END PUBLIC KEY-----";
 
-using var provider = new AsymmetricProvider();
+AsymmetricProvider.Encrypt("value", pem);
 
-var hash = provider.Encrypt("value", pem);
 ````
 
