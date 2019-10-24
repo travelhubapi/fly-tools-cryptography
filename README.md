@@ -9,7 +9,7 @@ Flytour Tools Cryptography is available for download and installation as
 
 To build Flytour Tools Cryptography from sources, you will need:
 
-[.NET Core 3.0 SDK](release-notes/3.0/README.md)
+[.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ## Operators
 
