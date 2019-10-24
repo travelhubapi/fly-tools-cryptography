@@ -15,6 +15,8 @@ To build Flytour Tools Cryptography from sources, you will need:
 
 ### Encrypt
 
+#### From string
+
 ````c#
 var pem = @"-----BEGIN PUBLIC KEY-----
 	MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxIRs8RmdAKypl9tKhrty
@@ -30,3 +32,10 @@ var hash = AsymmetricProvider.Encrypt("value", pem);
 
 ````
 
+#### From a PEM file
+
+````c#
+var pem = File.ReadAllText(@$"{Directory.GetCurrentDirectory()}\public.pem");
+
+txtHash.Text = AsymmetricProvider.Encrypt(txtHash.Text, pem);
+````
